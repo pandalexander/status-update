@@ -1,0 +1,167 @@
+/* Colors 
+
+Blue: 395a93
+Orange: ff6f69
+Green: 5aeda8
+
+
+
+*/
+
+html {
+  background: radial-gradient(#7e4843, #965e59);
+
+  /*  background-image:url('https://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Fcdn-image.travelandleisure.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2F1600x1000%2Fpublic%2F1479854258%2Fkahaluu-bay-kona-big-island-hawaii-WRLDSNST1122.jpg%3Fitok%3DSFMX3uUf&w=800&q=85');
+      background-repeat: no-repeat;
+        background-size: 100%;
+      background-position:50% 50%;*/
+}
+
+body {
+  /* background: #e3f2fd; */
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Share Tech Mono", monospace;
+}
+
+#stroller {
+  width: 60px;
+  height: 60px;
+  filter: invert(90%) sepia(91%) saturate(606%) hue-rotate(305deg)
+    brightness(93%) contrast(95%);
+}
+
+.lds-ring {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+  position: relative;
+  width: 130px;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  margin: 8px;
+  border: 8px solid #eab481;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #eab481 transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+svg text {
+  text-transform: uppercase;
+  animation: stroke 7s infinite alternate;
+  stroke-width: 2;
+  stroke: #365fa0;
+  font-size: 140px;
+}
+@media only screen and (min-width: 768px) {
+  svg text {
+    text-transform: uppercase;
+    animation: stroke 7s infinite alternate;
+    stroke-width: 2;
+    stroke: #365fa0;
+    font-size: 6em;
+  }
+}
+@keyframes stroke {
+  0% {
+    fill: rgba(72, 138, 20, 0);
+    stroke: #eab481;
+    stroke-dashoffset: 25%;
+    stroke-dasharray: 0 50%;
+    stroke-width: 2;
+  }
+  70% {
+    fill: rgba(72, 138, 20, 0);
+    stroke: #eab481;
+  }
+  80% {
+    fill: rgba(72, 138, 20, 0);
+    stroke: #eab481;
+    stroke-width: 3;
+  }
+  100% {
+    fill: #eab481;
+    stroke: rgba(54, 95, 160, 0);
+    stroke-dashoffset: -25%;
+    stroke-dasharray: 50% 0;
+    stroke-width: 0;
+  }
+}
+
+.inner-cutout {
+  padding: 40px 0;
+  display: block;
+  background-color: #eab481; /*#ff6f69*/
+
+  margin: 2%;
+  padding-bottom: 40px;
+  height: 300px;
+  background: radial-gradient(#eab481, #eab481);
+  background-size: 300%;
+  background-position: 50% 50%;
+}
+.knockout {
+  color: blue;
+  color: #fff;
+  background: linear-gradient(110deg, #eab481 33%, rgba(0, 0, 0, 0) 33%),
+    linear-gradient(110deg, #edd2b9 34%, #97b8a2 34%);
+  background-size: 400%;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.knockout {
+  animation: Gradient 2s ease infinite;
+  -webkit-animation: Gradient 9s ease infinite;
+  -moz-animation: Gradient 2s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 30% 50%;
+  }
+  50% {
+    background-position: 20% 70%;
+  }
+  100% {
+    background-position: 30% 50%;
+  }
+}
+
+.main {
+  width: 500px;
+  height: 800px;
+  margin-left: 40%;
+  margin-right: 40%;
+  margin-top: 10%;
+}
