@@ -1,24 +1,8 @@
-/* Colors 
-
-Blue: 395a93
-Orange: ff6f69
-Green: 5aeda8
-
-
-
-*/
-
 html {
   background: radial-gradient(#7e4843, #965e59);
-
-  /*  background-image:url('https://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Fcdn-image.travelandleisure.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2F1600x1000%2Fpublic%2F1479854258%2Fkahaluu-bay-kona-big-island-hawaii-WRLDSNST1122.jpg%3Fitok%3DSFMX3uUf&w=800&q=85');
-      background-repeat: no-repeat;
-        background-size: 100%;
-      background-position:50% 50%;*/
 }
 
 body {
-  /* background: #e3f2fd; */
   color: white;
   height: 100vh;
   display: flex;
